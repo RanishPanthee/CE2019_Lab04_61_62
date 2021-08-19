@@ -31,6 +31,7 @@ class Graph{
     }
 void addvertex(int value);
 void addedge(int vertex,int value);
+Vertex* searchvertex(int value);
 int indegree(int vertex);
 int outdegree(int vertex);
 int degree(int vertex);
