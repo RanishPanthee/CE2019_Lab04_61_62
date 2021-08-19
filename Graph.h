@@ -1,4 +1,5 @@
-#include<iostream.h>
+#include <iostream>
+#include <vector>
 using namespace std;
 class Edge{
     public:
@@ -29,12 +30,19 @@ class Graph{
     Graph(){
         HEAD=NULL;
     }
-void addvertex(int value);
-void addedge(int vertex,int value);
-Vertex* searchvertex(int value);
-int indegree(int vertex);
-int outdegree(int vertex);
-int degree(int vertex);
-bool areneighbours(int ver1,int ver2);
+     void addvertex(int value);
+     void addedge(int vertex,int value);
+     Vertex* searchvertex(int value);
+     int indegree(int vertex);
+     int outdegree(int vertex);
+     int degree(int vertex);
+     bool areneighbours(int ver1,int ver2);
+     bool isEmpty();
+     void neighbours(int vertex);
+     int numEdges();
+     int numVertices();
+     void removeEdge(int ver1,int ver2);
+     void removeVertex(int vertex);
+
 
 };
